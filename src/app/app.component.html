@@ -32,8 +32,7 @@
 <div class="content" role="main">
   <h2>{{title}}</h2>
 
-  <app-photo url="https://osegredo.com.br/wp-content/uploads/2018/07/signo-de-leao-830x450.jpg" alt="Leão"></app-photo>
-  <app-photo url="https://osegredo.com.br/wp-content/uploads/2018/07/signo-de-leao-830x450.jpg" alt="Leão"></app-photo>
+  <app-photo *ngFor="let photo of photos" [url]="photo.url" [description]="photo.description"></app-photo>
 
   <!-- Footer -->
   <footer>
