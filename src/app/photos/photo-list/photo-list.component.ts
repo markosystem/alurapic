@@ -19,9 +19,7 @@ export class PhotoListComponent implements OnInit, OnDestroy {
   currentPage: number = 1;
   userName: string = '';
 
-  constructor(
-    private activatedRoute: ActivatedRoute,
-    private photoService: PhotoService
+  constructor(private activatedRoute: ActivatedRoute, private photoService: PhotoService
   ) { }
 
   ngOnInit(): void {
